@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: FocusList (Lista de tarefas com sistema de cadastro de Usuário).
+  datasource:
+    username: postgres
+    password: 123456
+    url: jdbc:postgresql://localhost:5432/TodoList
+    driver-class-name: org.postgresql.Driver
