@@ -11,7 +11,7 @@
 	<groupId>com.architecturemvc</groupId>
 	<artifactId>FocusList</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Login</name>
+	<name>FocusList</name>
 	<description>Cadastro e 'login' de Usuário</description>
 	<developers>
 		<developer>
@@ -31,6 +31,12 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-oauth2-client</artifactId>
+		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-thymeleaf</artifactId>
