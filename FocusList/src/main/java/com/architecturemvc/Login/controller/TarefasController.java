@@ -35,7 +35,7 @@ public class TarefasController {
         return "redirect:/tarefas";
     }
 
-    @DeleteMapping("/{id}")
+    @GetMapping("/{id}")
     public String deletarTarefa(@PathVariable("id") UUID id){
         tarefasService.deletar(id);
         return "redirect:/tarefas";

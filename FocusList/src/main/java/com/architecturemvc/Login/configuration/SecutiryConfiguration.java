@@ -22,13 +22,13 @@ public class SecutiryConfiguration {
                 .formLogin(form ->{
                     form
                             .loginPage("/login")
-                            .defaultSuccessUrl("/", true)
+                            .defaultSuccessUrl("/tarefas", true)
                             .permitAll();
                 })
                 .oauth2Login(oauth ->{
                     oauth
                             .loginPage("/login")
-                            .defaultSuccessUrl("/", true);
+                            .defaultSuccessUrl("/tarefas", true);
                 })
                 .logout(logout ->
                         logout
