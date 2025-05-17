@@ -1,10 +1,10 @@
 spring:
   application:
-    name: FocusList (Lista de tarefas com sistema de cadastro de Usuário).
+    name: FocusList
   datasource:
     username: postgres
     password: 123456
-    url: jdbc:postgresql://localhost:5432/TodoList
+    url: jdbc:postgresql://localhost:5432/FocusList
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:

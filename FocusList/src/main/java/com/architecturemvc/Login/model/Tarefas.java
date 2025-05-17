@@ -1,8 +1,10 @@
 package com.architecturemvc.Login.model;
 
+import com.architecturemvc.Login.model.Enum.Prioridade;
 import jakarta.persistence.*;
 import lombok.Data;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
@@ -22,7 +24,13 @@ public class Tarefas {
     private String descricao;
 
     @Column
-    private LocalDateTime dataHora;
+    private LocalDate dataCriacao = LocalDate.now();
+
+    @Column
+    private LocalDate dataConclusao;
+
+    @Enumerated(EnumType.STRING)
+    private Prioridade prioridade = Prioridade.MEDIA;
 
     @Column
     private boolean concluida;

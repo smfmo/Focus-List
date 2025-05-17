@@ -16,16 +16,16 @@ public class Usuario {
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
 
-    @Column
+    @Column(name = "login")
     private String login;
 
-    @Column
+    @Column(name = "nome")
     private String nome;
 
-    @Column
+    @Column(name = "email")
     private String email;
 
-    @Column
+    @Column(name = "senha")
     private String senha;
 
     @OneToMany(mappedBy = "usuario",
