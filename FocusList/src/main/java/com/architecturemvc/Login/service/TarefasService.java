@@ -14,8 +14,11 @@ public class TarefasService {
 
     private final TarefasRepository tarefasRepository;
 
-    public List<Tarefas> listarTarefas(){
-        return tarefasRepository.findAll();
+    public List<Tarefas> listarTarefas(String email){
+        if (tarefasRepository.findByUsuarioEmail(email) != null){
+            return tarefasRepository.findAll();
+        }
+        return null;
     }
 
     public void salvar(Tarefas tarefas){
